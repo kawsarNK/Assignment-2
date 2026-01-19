@@ -10,17 +10,21 @@
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .clr-lin {
-            color: brown;
+        .gradient-text {
+            background-image: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
         }
     </style>
 </head>
 
 <body class="inter-font">
-    <header>
+    <header class="navbar">
         <nav>
             <div class="brand">
-                <h3>Tech<span class="clr-lin">Wave</span></h3>
+                <h3>Tech<span class="gradient-text">Wave</span></h3>
             </div>
             <div>
                 <ul class="nav-links">
@@ -36,6 +40,30 @@
         </nav>
     </header>
     <main>
+        <section class="banner">
+            <div class="banner-wrapper">
+
+                <!-- CIRCLE -->
+                <div class="circle">
+                    <span class="badge">NEW</span>
+
+                    <div class="banner-img">
+                        <img src="./assets/microphone.png" alt="Microphone">
+                    </div>
+                </div>
+
+
+                <h1>TechWave</h1>
+                <p>Exploring the future of technology, innovation, and digital careers.</p>
+
+                <div class="banner-buttons">
+                    <a href="#" class="btn"><i class="fa-brands fa-spotify"></i> Listen on Spotify</a>
+                    <a href="#" class="btn-outline"><i class="fa-regular fa-envelope"></i> Subscribe</a>
+                </div>
+
+            </div>
+        </section>
+
 
     </main>
     <footer>

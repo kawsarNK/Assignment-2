@@ -1,31 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
+/* shared style */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .inter-font {
     font-family: "Inter", sans-serif;
 }
 
 nav {
+    width: 100%;
+    height: 92px;
     display: flex;
     justify-content: space-around;
-    background-color: #412567;
+    background-color: #1A0B2E;
 }
 
-.brand {
+.brand h3 {
     color: #FFFFFF;
+    margin-top: 30px;
 }
 
 nav ul {
     display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     gap: 20px;
     font-weight: 500;
     font-size: 16px;
+    margin-top: 30px;
 
 }
 
-nav ul li a {
+.nav-links a {
+
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
     color: #FFFFFF;
 }
 
@@ -37,7 +54,141 @@ nav ul li a {
 }
 
 .Subscribe-btn {
+
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+/* banner portion */
+.banner {
+    background: url("../assets/hero-bg.png") center/cover no-repeat;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.banner-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    background: url("../assets/hero-circle.png") center/cover no-repeat;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge {
+    position: absolute;
+    top: 5px;
+    margin-left: 170px;
+    background: #00FF88;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 120px;
+}
+
+.banner-img img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-wrapper h1 {
+    margin-top: 20px;
+    font-size: 3.80rem;
+    font-weight: 800;
+}
+
+.banner-wrapper p {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+.banner-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 8px;
+
+}
+
+.btn {
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
     color: #FFFFFF;
-    background-color: rgb(209, 49, 35);
-    border-radius: 8px;
+    border-radius: 24px;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn-outline {
+    color: #00FF88;
+    border: #00FF88 1px solid;
+    border-radius: 24px;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+@media (max-width: 576px) {
+    .nav-links {
+        display: none;
+    }
+
+    .Subscribe-btn {
+        display: none;
+    }
+
+
+    .circle {
+        width: 280px;
+        height: 280px;
+    }
+
+    .banner-img {
+        width: 90px;
+    }
+
+    .banner-wrapper h1 {
+        font-size: 22px;
+    }
+
+    .banner-wrapper p {
+        font-size: 13px;
+    }
+
+    .banner-buttons {
+        flex-direction: column;
+    }
 }
