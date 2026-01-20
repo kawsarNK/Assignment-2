@@ -69,6 +69,15 @@ nav ul {
     display: none;
 }
 
+.navbar hr {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #3b0540;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 /* banner portion */
 .banner {
     background: url("../assets/hero-bg.png") center/cover no-repeat;
@@ -435,6 +444,65 @@ nav ul {
     box-shadow: 0 4px 10px rgba(0, 255, 136, 0.2);
 }
 
+.footer {
+    background-image: url(../assets/footer-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 412px;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+
+.footer h1 {
+    margin-top: 70px;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.footer-link-container {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #a59abf;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.footer-links p:hover {
+    color: white;
+}
+
+.footer-links img {
+    width: 100%;
+    max-width: 20px;
+    height: auto;
+}
+
+
+.footer>p:last-child {
+    color: #6e6485;
+    font-size: 0.85rem;
+}
 
 @media (max-width: 576px) {
     .nav-links {
@@ -514,5 +582,16 @@ nav ul {
 
     .social-links {
         justify-content: center;
+    }
+
+    .footer-link-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .footer h1 {
+        font-size: 2.2rem;
     }
 }
